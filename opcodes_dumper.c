@@ -18,9 +18,6 @@
 #include <stdio.h>
 #include "sapi/embed/php_embed.h"
 #include "main/php_version.h"
-
-#include "opcodes_handlers.h"
-
 #define BUFFER_LEN 11
 
 char *opname(zend_uchar opcode){
@@ -247,7 +244,7 @@ int main(int argc, char **argv){
 		return 1;
 	}
 	PHP_EMBED_START_BLOCK(argc, argv);
-	printf("Script: %s\n", argv[1]);
+	printf("Script: %s   PHP version: %d.%d\n", argv[1], PHP_MAJOR_VERSION, PHP_MINOR_VERSION);
 	file_handle.filename = argv[1];
 	file_handle.free_filename = 0;
 	file_handle.type = ZEND_HANDLE_FILENAME;
