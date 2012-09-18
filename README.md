@@ -15,6 +15,14 @@ Opcodes Dumper
 
 原Goole Code 代码地址： http://code.google.com/p/opcodesdumper/    
 
+##自行判断php的版本
+目前支持php 5.3和php 5.4 ，分别对应的handlers文件为: 
+```
+php 5.3 : php_5_3_opcodes_handlers
+php 5.4 : php_5_4_opcodes_handlers
+(当然 ，你可以自定义为)
+php 6.1 : php_6_1_opcodes_handlers
+```
 
 ##安装示例
 
