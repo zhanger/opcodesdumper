@@ -12,4 +12,4 @@ CFLAGS = -I$(PHPPATH)/include/php \
 LDFLAGS = -L$(PHPPATH)/lib -lphp5
 
 ALL:
-	$(CC) opcode_handlers.c opcodes_dumper.c -o opd $(CFLAGS) $(LDFLAGS)
+	$(CC) opcodes_handlers.c opcodes_dumper.c -o opd $(CFLAGS) $(LDFLAGS)

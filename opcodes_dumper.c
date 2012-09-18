@@ -17,6 +17,7 @@
 
 #include <stdio.h>
 #include "sapi/embed/php_embed.h"
+#include "main/php_version.h"
 
 #include "opcodes_handlers.h"
 
