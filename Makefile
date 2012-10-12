@@ -13,3 +13,6 @@ LDFLAGS = -L$(PHPPATH)/lib -lphp5
 
 ALL:
 	$(CC) opcodes_handlers.c opcodes_dumper.c -o opd $(CFLAGS) $(LDFLAGS)
+
+debug:
+	$(CC) -ggdb opcodes_handlers.c opcodes_dumper.c -o opd $(CFLAGS) $(LDFLAGS)
